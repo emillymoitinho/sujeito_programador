@@ -36,4 +36,45 @@ body {
     }
 }
 
-/*  */
+/* Inicio main */
+.main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    justify-content: center;
+    background: #000 url('img/main.jpeg') top right / contain no-repeat;
+
+    .title {
+        h1 {
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            font-size: 54px;
+        }
+
+        p {
+            font-size: 20px;
+            font-style: italic;
+            color: #1e96FC;
+            margin-top: 10px;
+            margin-bottom: 35px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #181818;
+
+        .btn {
+            cursor: pointer;
+            border: 0;
+            padding: 14px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: #fff;
+        }
+    }
+}
