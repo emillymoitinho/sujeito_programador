@@ -75,6 +75,37 @@ body {
             font-size: 18px;
             font-weight: 700;
             background-color: #fff;
+            transition: .5s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
         }
     }
+}
+
+/* Inicio sobre */
+.about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #fff;
+
+    div {
+        max-width: 50%;
+        padding-right: 40px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    img {
+        max-width: 500px;
+        border-radius: 10px;
+    }
+    
 }
