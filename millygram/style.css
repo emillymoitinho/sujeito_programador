@@ -24,3 +24,31 @@ body {
     line-height: 18px;
     background-color: var(--background);
 }
+
+#wrapper {
+    height: 100vh;
+
+    #container {
+        margin: 0 auto;
+        min-height: 100%;
+        width: 800px;
+        display: flex;
+        align-items: center;
+
+        .column {
+            flex-grow: 1;
+            width: 50%;
+        }
+
+        .left {
+            height: 800px;
+            width: 500px;
+            margin-bottom: 50px;
+            background: url(img/img-main.png) center / 450px no-repeat;
+        }
+
+        .right {
+            padding-left: 20px;
+        }
+    }
+}
