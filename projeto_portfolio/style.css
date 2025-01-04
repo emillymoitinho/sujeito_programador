@@ -11,6 +11,13 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --default: #181818;
+    --white: #fff;
+    --gray: #ddd;
+    --blue: #1e96FC;
+}
+
 /* Inicio Header */
 .nav {
     position: sticky;
@@ -19,7 +26,7 @@ html {
     height: 80px;
     display: flex;
     justify-content: flex-end;
-    background-color: #181818;
+    background-color: var(--default);
     z-index: 9;
 
     .nav_list {
@@ -29,14 +36,14 @@ html {
         margin-right: 28px;
 
         a {
-            color: #ddd;
+            color: var(--gray);
             padding: 20px;
             text-decoration: none;
             transition: .3s ease-in-out;
         }
 
         a:hover {
-            color: #fff;
+            color: var(--white);
         }
     }
 }
@@ -55,14 +62,14 @@ html {
         h1 {
             display: flex;
             flex-direction: column;
-            color: #fff;
+            color: var(--gray);
             font-size: 54px;
         }
 
         p {
             font-size: 20px;
             font-style: italic;
-            color: #1e96FC;
+            color: var(--blue);
             margin-top: 10px;
             margin-bottom: 35px;
         }
@@ -96,7 +103,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 80px 10%;
-    background-color: #fff;
+    background-color: var(--white);
 
     div {
         max-width: 50%;
@@ -160,7 +167,7 @@ html {
         padding: 12px 28px;
         border-radius: 4px;
         font-size: 18px;
-        color: #fff;
+        color: var(--white);
         margin-top: 18px;
         background-color: #353535;
         cursor: pointer;
@@ -181,11 +188,11 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 70px 0;
-    color: #fff;
-    background-color: #181818;
+    color: var(--white);
+    background-color: var(--default);
 
     a {
-        color: #fff;
+        color: var(--white);
         text-decoration: none;
     }
 
