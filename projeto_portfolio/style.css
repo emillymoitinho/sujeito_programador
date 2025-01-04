@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 
-body {
+body,html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Inicio Header */
