@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-body,html {
+body,
+html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
@@ -111,7 +112,7 @@ body,html {
         max-width: 500px;
         border-radius: 10px;
     }
-    
+
 }
 
 /* Inicio Projetos */
@@ -190,5 +191,38 @@ footer {
 
     p {
         margin-left: 12px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .main {
+        .title {
+            h1 {
+                font-size: 45px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 80px 0 0 0;
+
+        div {
+            max-width: 80%;
+
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        img {
+            width: 80%;
+            margin-top: 30px;
+        }
     }
 }
