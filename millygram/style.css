@@ -38,148 +38,184 @@ p {
         width: 800px;
         display: flex;
         align-items: center;
+    }
 
-        .column {
-            flex-grow: 1;
-            width: 50%;
-        }
+    /* Página Cadastro */
 
-        .left {
-            height: 800px;
-            width: 500px;
-            margin-bottom: 50px;
-            background: url(img/img-main.png) center / 450px no-repeat;
-        }
+    #container_signup {
+        margin: 0 auto;
+        min-height: 100%;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
 
-        .right {
-            padding-left: 20px;
+        #message {
+            margin: 10px 70px;
 
-            .login {
-                background-color: #fff;
-                border: 1px solid #e6e6e6;
+            span {
+                font-size: 17px;
+                font-weight: bold;
                 text-align: center;
-                padding: 3rem 0;
+                line-height: 20px;
+                color: #8e8e8e;
+            }
+        }
 
-                .logo {
-                    .logoImg {
-                        width: 175px;
-                    }
-                }
+        #cta_button {
+            width: 250px;
+            margin: 10px 0;
+            height: 35px;
+            border: 0;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #0095f6;
+            cursor: pointer;
+        }
+    }
 
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+    .column {
+        flex-grow: 1;
+        width: 50%;
+    }
 
-                    input[type="text"], input[type="password"] {
-                        width: 250px;
-                        height: 40px;
+    .left {
+        height: 800px;
+        width: 500px;
+        margin-bottom: 50px;
+        background: url(img/img-main.png) center / 450px no-repeat;
+    }
 
-                        margin-top: 1rem;
-                        padding: 10px;
-                        font-size: 13px;
-                        color: #000;
-                        border-radius: 4px;
-                        background-color: #fafafa;
-                        border: 1px solid #e6e6e6;
-                    }
+    .right {
+        padding-left: 20px;
 
-                    input::placeholder {
-                        color: rgb(165, 164, 164);
-                    }
+        .login {
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            text-align: center;
+            padding: 3rem 0;
 
-                    input:focus {
-                        outline: 0;
-                        border: 1px solid #a1a1a1;
-                    }
-
-                    input[type="submit"] {
-                        width: 250px;
-                        margin-top: 10px;
-                        height: 30px;
-                        border: 0;
-                        border-radius: 8px;
-                        color: #fff;
-                        font-size: 14px;
-                        font-weight: 700;
-                        background-color: #4cb5f9;
-                    }
-                }
-
-                .or {
-                    margin: 1rem 45px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    color: #737373;
-                    font-size: 12px;
-                    font-weight: 600;
-
-                    .line {
-                        width: 100px;
-                        border-top: 1px solid #dbdbdb;
-                    }
-                }
-
-                .entrar {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    div {
-                        margin-bottom: 1rem;
-                        display: flex;
-                        align-items: center;
-                        
-                        svg {
-                            margin-right: 10px;
-                        }
-
-                        p {
-                            color: #0095f6;
-                            font-weight: 600;
-                            font-size: 14px;
-                            transition: .3s ease-in-out;
-                            cursor: pointer;
-                        }
-
-                        p:hover {
-                            color: #057cca;
-                        }
-                    }
+            .logo {
+                .logoImg {
+                    width: 175px;
                 }
             }
 
-            .infoBox {
-                height: 60px;
-                margin: 10px;
-                margin: 10px auto 0;
-                border: 1px solid #e6e6e6;
-                background-color: #fff;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                a {
-                    font-weight: 600;
-                }
-            }
-
-            .apps {
-                margin: 1rem;
+            form {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                p {
-                    margin-bottom: 1rem;
+                input[type="text"],
+                input[type="password"] {
+                    width: 250px;
+                    height: 40px;
+
+                    margin-top: 1rem;
+                    padding: 10px;
+                    font-size: 13px;
+                    color: #000;
+                    border-radius: 4px;
+                    background-color: #fafafa;
+                    border: 1px solid #e6e6e6;
                 }
 
-                .stores {
-                    display: flex;
-                    cursor: pointer;
+                input::placeholder {
+                    color: rgb(165, 164, 164);
                 }
+
+                input:focus {
+                    outline: 0;
+                    border: 1px solid #a1a1a1;
+                }
+
+                input[type="submit"] {
+                    width: 250px;
+                    margin-top: 10px;
+                    height: 30px;
+                    border: 0;
+                    border-radius: 8px;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    background-color: #4cb5f9;
+                }
+            }
+
+            .or {
+                margin: 1rem 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #737373;
+                font-size: 12px;
+                font-weight: 600;
+
+                .line {
+                    width: 100px;
+                    border-top: 1px solid #dbdbdb;
+                }
+            }
+
+            .entrar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        color: #0095f6;
+                        font-weight: 600;
+                        font-size: 14px;
+                        transition: .3s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    p:hover {
+                        color: #057cca;
+                    }
+                }
+            }
+        }
+
+        .infoBox {
+            height: 60px;
+            margin: 10px;
+            margin: 10px auto 0;
+            border: 1px solid #e6e6e6;
+            background-color: #fff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                font-weight: 600;
+            }
+        }
+
+        .apps {
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            .stores {
+                display: flex;
+                cursor: pointer;
             }
         }
     }
