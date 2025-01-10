@@ -178,7 +178,7 @@ p {
 
                 .stores {
                     display: flex;
-                    
+                    cursor: pointer;
                 }
             }
         }
