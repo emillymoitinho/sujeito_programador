@@ -184,3 +184,24 @@ p {
         }
     }
 }
+
+footer {
+    height: 50px;
+    text-align: center;
+
+    a {
+        color: #000;
+        font-weight: bold;
+        margin-right: 8px;
+        text-transform: uppercase;
+    }
+
+    #text_small {
+        font-size: 12px;
+        font-weight: bold;
+        color: gray;
+        text-transform: uppercase;
+        padding-left: 20px;
+        display: inline-block;
+    }
+}
