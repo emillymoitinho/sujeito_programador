@@ -30,7 +30,7 @@ p {
 }
 
 #wrapper {
-    height: 100vh;
+    height: 100%;
 
     #container {
         margin: 0 auto;
@@ -130,18 +130,38 @@ p {
                 outline: 0;
                 border: 1px solid #a1a1a1;
             }
+        }
 
-            input[type="submit"] {
+        input[type="submit"] {
+            width: 250px;
+            margin-top: 10px;
+            height: 30px;
+            border: 0;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: #4cb5f9;
+            cursor: pointer;
+        }
+
+        #terms {
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            p {
                 width: 250px;
-                margin-top: 10px;
-                height: 30px;
-                border: 0;
-                border-radius: 8px;
-                color: #fff;
-                font-size: 14px;
-                font-weight: 700;
-                background-color: #4cb5f9;
-                cursor: pointer;
+                font-size: 12px;
+                color: #737373;
+                margin-bottom: 1rem;
+
+
+                a {
+                    color: #00376b;
+                }
             }
         }
 
