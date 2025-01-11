@@ -16,8 +16,14 @@ a {
     text-decoration: none;
 }
 
+html {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -30,6 +36,7 @@ p {
 }
 
 #wrapper {
+    width: 100%;
     height: 100%;
 
     #container {
@@ -266,4 +273,62 @@ footer {
         padding-left: 20px;
         display: inline-block;
     }
+}
+
+@media (max-width: 850px) {
+    .left {
+        display: none;
+    }
+    
+    #wrapper {
+        #container {
+            width: 70%;
+        }
+
+        .right {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    #wrapper {
+        #container_signup {
+            width: 90%;
+        }
+
+        .login {
+
+            form {
+                input[type="text"],
+                input[type="password"] {
+                    width: 80%;
+                }
+
+            }
+
+            input[type="submit"] {
+                width: 80%;
+            }
+
+        }
+
+        .right {
+            padding-left: 0;
+        }
+    }
+
+    #container_signup {
+        #message {
+
+            span {
+                display: flex;
+                width: 14rem;
+
+            }
+        }
+    }
+
+    
 }
