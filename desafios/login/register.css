@@ -35,7 +35,7 @@ main {
     align-items: center;
 }
 
-#login {
+#register {
     width: 50%;
     height: 100%;
     display: flex;
@@ -44,9 +44,9 @@ main {
     flex-direction: column;
 }
 
-#mycont {
+#newcont {
     position: relative;
-    height: 35%;
+    height: 50%;
     width: 48%;
     display: flex;
     justify-content: space-between;
@@ -57,8 +57,8 @@ h1 {
     font-size: 2vw;
 }
 
-input {
-    height: 15%;
+input[type="text"], input[type="email"], input[type="password"]   {
+    height: 10%;
     border: 1px solid var(--black);
     padding: 15px;
     border-radius: 4px;
@@ -71,6 +71,22 @@ input::placeholder {
 
 input:focus {
     outline: none;
+}
+
+#agree {
+    display: flex;
+    align-items: center;
+
+}
+
+#agree p {
+    margin-left: 0.5rem;
+}
+
+#agree input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 }
 
 button {
@@ -90,7 +106,7 @@ a {
     color: var(--black);
 }
 
-#register {
+#login {
     width: 100%;
     text-align: left;
 }
