@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --button: #0056FB;
+    --blue: #0056FB;
+}
+
+html, body {
+    width: 100vw;
+    height: 100%;
+    font-family: "Roboto", serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mycont {
+    position: relative;
+    height: 35%;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+input {
+    height: 15%;
+    border: 1px solid var(--black);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: var(--black);
+    font-family: "Roboto", serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 0.8rem;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--white);
+    font-family: "Roboto", serif;
+    background-color: var(--button);
+    cursor: pointer;
+}
+
+#register {
+    width: 100%;
+    text-align: left;
+}
+
+#code {
+    position: absolute;
+    bottom: 3%;
+    right: -13%;
+}
+
+#additional {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+}
+
+#content_img {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content_add {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    width: 25vw;
+    font-size: 2.3vw;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+#text_add {
+    width: 25vw;
+    font-size: 1vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
